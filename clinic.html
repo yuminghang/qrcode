@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+
+    <title>牛股集中营</title>
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            margin: 0;
+            background-color: #730101;
+        }
+
+        div {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            font-weight: 900;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .centers {
+            text-align: center;
+        }
+
+        img {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p class="centers" style="font-size:30px;color:white">请再次扫描二维码</p>
+    <p class="centers" style="color:#f9e800">
+        牛股集中营<br/>
+        你有目标,我有实力！想赚钱吗？<br/>
+        让你我在股海来一次财富的邂逅吧！</p>
+    <img id="erweima"/>
+    <p class="centers">扫描二维码(按住图片2-3秒)<br/>点击《添加到通讯录》</p>
+    <p class="centers" style="font-size:18px;color:white">免费诊断个股 免费调仓换股 免费送牛股</p>
+</div>
+</body>
+</html>
+<script>
+    pos = Math.floor(Math.random() * 27) + 1;
+    path = "1/" + pos + ".jpg";
+    document.getElementById("erweima").src = path;
+</script>
